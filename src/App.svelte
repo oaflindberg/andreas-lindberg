@@ -72,10 +72,18 @@
     font-family: 'Courier New', Courier, monospace;
     color: #234b9a;
     letter-spacing: 2px;
-    font-weight: 800;
+    font-weight: 200;
     padding: 32px 0;
     text-align: center;
     line-height: 110%;
+  }
+
+  h1::selection {
+    background: #fcbd00;
+  }
+
+  img::selection {
+    background: none;
   }
 
   @keyframes spin {
@@ -96,7 +104,10 @@
     }
     h1 {
       color: #fcfbe3;
-      font-weight: 200;
+    }
+
+    h1::selection {
+      background: #234b9a;
     }
   }
 </style>
